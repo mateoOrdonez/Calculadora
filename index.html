@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container align-self-center">
+
+        <!-- Titulo -->
+        <div class="title">
+            <h1>UAO</h1>
+            <h1 class="bold">Calculator</h1>
+        </div>
+
+        <!-- Calculadora -->
+        <div class="row align-items-center">
+
+            <!-- Escritura numeros y selector a la izquierda -->
+            <div class="col-lg-5 col-md-12">
+
+                <!-- Escritura de los números -->
+                <div class="number">
+                    <p>Número1</p>
+                    <input type="number" placeholder="0">
+                    <p>Número2</p>
+                    <input type="number" placeholder="0">
+                </div>
+
+                <!-- Selección de la operación -->
+                <div class="dropdown">
+                    <p>Operación</p>
+                    <select class="form-select text-center" aria-label="Default select example">
+                        <option value="1">Suma</option>
+                        <option value="2">Resta</option>
+                        <option value="3">Multiplicación</option>
+                        <option value="3">División</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Simbolo igual en el centro -->
+            <div class="col-lg-2 col-md-12 d-flex justify-content-center">
+                <p class="equal text-center">=</p>
+            </div>
+
+            <!-- Resultado -->
+            <div class="col-lg-5 col-md-12 ">
+                <div class="result-box">
+                    <p>Resultado</p>
+                    <h1 id="result">0</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
